@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "preserve",
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "paths": {
+      "@styles": ["styles/index"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*", "pages/**/*", "styles/**/*", "global.types.d.ts"],
+  "exclude": ["node_modules"]
+}
