@@ -17,6 +17,14 @@ const GlobalStyles = createGlobalStyle`
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Proxima Nova Semibold';
+    src: url('/fonts/ProximaNovaSemibold.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
   @media only screen and (max-width: 480px) {
     html {
       font-size: 100%;

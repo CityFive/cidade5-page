@@ -3,13 +3,19 @@ import Grid from "../../../components/Grid";
 import HiddenOnMedium from "../../../components/Grid/HiddenOnMedium";
 import HiddenOnSmall from "../../../components/Grid/HiddenOnSmall";
 import Typography from "../../../components/Typography";
-import { SectionHeroContainer } from "./SectionHero.styles";
+import { SectionHeroContainer, SectionText } from "./SectionHero.styles";
 import Image from "next/image";
 
 const SectionHero = () => {
   return (
     <SectionHeroContainer>
-      <Grid.Container>
+      <SectionText>
+        <h3>BEM-VINDO À CIDADE CINCO!</h3>
+        <h2>A boa notícia <br/> ecoando na cidade</h2>
+        <p>Somos uma comunidade de pessoas que confessam a fé em Jesus Cristo e vivem para proclamar a grande história da redenção na cidade de São Paulo.</p>
+      </SectionText>
+
+      {/* <Grid.Container>
         <Grid.Row>
           <Grid.Column width={[4, 5]}>
             <Flex
@@ -19,8 +25,7 @@ const SectionHero = () => {
               height="100%"
             >
               <Typography.HeadingLarge>
-                A <Typography.Highlight>boa notícia</Typography.Highlight>{" "}
-                ecoando na cidade
+                A boa notícia ecoando na cidade
               </Typography.HeadingLarge>
               <HiddenOnSmall>
                 <Typography.Paragraph marginTop="32px">
@@ -43,7 +48,7 @@ const SectionHero = () => {
             </HiddenOnMedium>
           </Grid.Column>
         </Grid.Row>
-      </Grid.Container>
+      </Grid.Container> */}
     </SectionHeroContainer>
   );
 };
