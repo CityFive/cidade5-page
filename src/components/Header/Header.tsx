@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Box, Flex } from "reflexbox";
 import { SocialInfo } from "../../api/data";
-import { BrandColors } from "../../foundation/tokens";
+import { BrandColors, NeutralColors } from "../../foundation/tokens";
 import Grid from "../Grid";
 import Icon, { Icons } from "../Icons";
 import Typography from "../Typography";
 import {
+  ButtonNavLink,
   HamburgerMenu,
   HeaderContainer,
   HeaderIconList,
@@ -27,44 +28,44 @@ const Header: React.FC<Props> = ({ social }) => {
     <HeaderContainer>
       <Grid.Container>
         <Flex alignItems="center" justifyContent="space-between">
-          <Typography.Subtitle color={BrandColors.colorBrand02}>
+          <Typography.Subtitle color={NeutralColors.lightest}>
             Cidade Cinco
           </Typography.Subtitle>
           <HeaderNavList>
-            <HeaderNavLink href="#sobre">Sobre</HeaderNavLink>
-            <HeaderNavLink href="#confissao">Confissão</HeaderNavLink>
-            <HeaderNavLink href="#seminaristas">Seminaristas</HeaderNavLink>
-            <HeaderNavLink href="#galeria">Galeria</HeaderNavLink>
-            <HeaderNavLink href="#mais-info">Mais informações</HeaderNavLink>
-          </HeaderNavList>
+            <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
+            <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
+            <HeaderNavLink href="#seminaristas">Atividades</HeaderNavLink>
+            <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
+            <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
           <HeaderIconList>
             <a href={social.instagramUrl} target="_blank">
               <Icon
                 icon={Icons.Instagram}
-                size="24px"
-                color={BrandColors.colorBrand02}
-              />
+                size="18px"
+                color={NeutralColors.lightest}
+                />
             </a>
             <a href={social.youtubeUrl} target="_blank">
               <Icon
                 icon={Icons.Youtube}
-                size="24px"
-                color={BrandColors.colorBrand02}
-              />
+                size="18px"
+                color={NeutralColors.lightest}
+                />
             </a>
             <a href={social.spotifyUrl} target="_blank">
               <Icon
                 icon={Icons.Spotify}
-                size="24px"
-                color={BrandColors.colorBrand02}
-              />
+                size="18px"
+                color={NeutralColors.lightest}
+                />
             </a>
           </HeaderIconList>
+                </HeaderNavList>
           <HamburgerMenu onClick={() => setMenuOpen(!menuOpen)}>
             <Icon
               icon={Icons.Burger}
-              size="24px"
-              color={BrandColors.colorBrand02}
+              size="18px"
+              color={NeutralColors.lightest}
             />
           </HamburgerMenu>
           {menuOpen && (

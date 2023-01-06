@@ -34,6 +34,8 @@ export enum BrandColors {
   colorBrand03 = "#E6E0D9",
   colorBrand04 = "#1C3234",
   colorBrand05 = "#DFD1BC",
+  colorBrand06 = "#FFF",
+  colorBrand07 = "#000",
 }
 
 export enum NeutralColors {

@@ -39,13 +39,31 @@ export const MobileMenu = styled.div`
 export const HeaderContainer = styled.header`
   height: 88px;
   width: 100%;
-  background-color: ${BrandColors.colorBrand01};
+  background-color: ${NeutralColors.darkest};
   display: flex;
   align-items: center;
+  justify-content: center;
+
 `;
 
 export const HeaderNavLink = styled.a`
   color: ${NeutralColors.lightest};
+  font-size: 18px;
+  margin-right: 32px;
+  cursor: pointer;
+  text-decoration: none;
+  
+
+  :last-child {
+    margin-right: 0;
+  }
+`;
+
+export const ButtonNavLink = styled.a`
+  color: ${NeutralColors.darkest};
+  background-color:${NeutralColors.lightest} ;
+  padding: 16px 32px;
+  border-radius: 100px;
   font-size: 18px;
   margin-right: 32px;
   cursor: pointer;
@@ -58,6 +76,7 @@ export const HeaderNavLink = styled.a`
 
 export const HeaderNavList = styled.div`
   display: none;
+  align-items: center;
 
   @media ${MediaQueries.Medium} {
     display: flex;

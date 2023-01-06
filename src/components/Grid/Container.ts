@@ -7,7 +7,7 @@ const Container = styled.div`
   padding: 0 16px;
 
   @media ${MediaQueries.Medium} {
-    max-width: 1136px;
+    max-width: 1312px;
     padding: none;
   }
 `;
