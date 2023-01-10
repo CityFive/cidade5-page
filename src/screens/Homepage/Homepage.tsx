@@ -19,8 +19,8 @@ const Homepage = ({ pastors, social, instagramPosts, offerPix }: HomepageProps) 
       <Header social={social} />
       <main>
         <SectionHero />
-        <SectionAboutUs />
         <SectionConfessionOfFaith />
+        <SectionAboutUs />
         <SectionOurPastors pastors={pastors} />
         <SectionContribution offerPix={offerPix} />
         <SectionsPhotosGallery instagramPosts={instagramPosts} />
