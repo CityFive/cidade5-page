@@ -7,9 +7,11 @@ export const SectionConfessionContainer = styled.div`
   padding-top: 64px;
   padding-bottom: 64px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: ${NeutralColors.lightest}; ;
+  gap: 64px;
 `;
 export const SectionTextConfession = styled.div`
   width: 950px;

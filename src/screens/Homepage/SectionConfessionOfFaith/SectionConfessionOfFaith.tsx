@@ -1,3 +1,4 @@
+import ButtonPrimary from "src/components/ButtonPrimary";
 import {
   SectionConfessionContainer,
   SectionTextConfession,
@@ -22,6 +23,7 @@ const SectionConfessionOfFaith = () => {
           Sagrada.
         </p>
       </SectionTextConfession>
+      <ButtonPrimary>Baixar Confissão de Fé</ButtonPrimary>
     </SectionConfessionContainer>
   );
 };

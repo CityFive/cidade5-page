@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { BrandColors, NeutralColors } from "../../foundation/tokens";
 
 const ButtonPrimary = styled.button`
-  padding: 12px 24px;
-  background-color: ${BrandColors.colorBrand02};
-  color: ${NeutralColors.lightest};
+  padding: 16px 24px;
+  background-color: ${BrandColors.colorBrand05};
+  color: ${NeutralColors.darkest};
   border: none;
-  text-transform: uppercase;
-  font-family: "Proxima Nova";
+  border-radius: 100px;
+  font-family: "Proxima Nova Semibold";
   font-size: 18px;
   display: flex;
   align-items: center;
