@@ -1,5 +1,5 @@
 import { Box } from "reflexbox";
-import { FontFamily, NeutralColors } from "src/foundation/tokens";
+import { NeutralColors } from "src/foundation/tokens";
 import styled from "styled-components";
 import Paragraph from "../../../components/Typography/Paragraph";
 import { MediaQueries } from "../../../foundation/media";
@@ -29,11 +29,10 @@ export const SectionHeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${NeutralColors.darkest};
-  ;
+  background-color: ${NeutralColors.darkest}; ;
 `;
 
-export const SectionText = styled.div`
+export const SectionTextHero = styled.div`
   width: 750px;
   height: 289px;
   color: ${NeutralColors.lightest};
@@ -41,27 +40,26 @@ export const SectionText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px ;
+  gap: 40px;
 
-  h3{
+  h3 {
     padding-top: 0px;
     font-size: 1.125rem;
     margin: 0;
     padding: none;
-    font-family: 'Proxima Nova Semibold';
+    font-family: "Proxima Nova Semibold";
   }
-  h2{
+  h2 {
     margin: 0;
     font-size: 5rem;
     text-align: center;
-    font-family: 'Proxima Nova Semibold';
+    font-family: "Proxima Nova Semibold";
   }
-  p{
+  p {
     margin: 0;
     font-size: 1.125rem;
     text-align: center;
-    font-family: 'Proxima Nova Semibold';
+    font-family: "Proxima Nova Semibold";
+    line-height: 150% ;
   }
-  
-
 `;

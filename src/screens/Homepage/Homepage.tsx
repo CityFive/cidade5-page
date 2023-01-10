@@ -1,7 +1,6 @@
 import * as React from "react";
 import SectionAboutUs from "./SectionAboutUs";
 import SectionHero from "./SectionHero";
-import SectionServiceInfo from "./SectionServiceInfo";
 import SectionConfessionOfFaith from "./SectionConfessionOfFaith";
 import SectionOurPastors from "./SectionOurPastors";
 import SectionContribution from "./SectionContribution";
@@ -20,7 +19,6 @@ const Homepage = ({ pastors, social, instagramPosts, offerPix }: HomepageProps) 
       <Header social={social} />
       <main>
         <SectionHero />
-        <SectionServiceInfo social={social} />
         <SectionAboutUs />
         <SectionConfessionOfFaith />
         <SectionOurPastors pastors={pastors} />

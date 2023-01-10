@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Box, Flex } from "reflexbox";
+import { Flex } from "reflexbox";
 import { SocialInfo } from "../../api/data";
-import { BrandColors, NeutralColors } from "../../foundation/tokens";
+import { NeutralColors } from "../../foundation/tokens";
 import Grid from "../Grid";
 import Icon, { Icons } from "../Icons";
 import Typography from "../Typography";
@@ -32,8 +32,8 @@ const Header: React.FC<Props> = ({ social }) => {
             Cidade Cinco
           </Typography.Subtitle>
           <HeaderNavList>
-            <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
             <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
+            <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
             <HeaderNavLink href="#seminaristas">Atividades</HeaderNavLink>
             <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
             <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
