@@ -34,7 +34,7 @@ const Header: React.FC<Props> = ({ social }) => {
           <HeaderNavList>
             <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
             <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
-            <HeaderNavLink href="#seminaristas">Atividades</HeaderNavLink>
+            <HeaderNavLink href="#atividades">Atividades</HeaderNavLink>
             <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
             <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
           <HeaderIconList>

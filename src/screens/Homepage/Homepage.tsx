@@ -10,10 +10,16 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { InferGetStaticPropsType } from "next";
 import { getStaticProps } from "../../../pages";
+import SectionActivities from "./SectionActivities/SectionActivities";
 
 type HomepageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
-const Homepage = ({ pastors, social, instagramPosts, offerPix }: HomepageProps) => {
+const Homepage = ({
+  pastors,
+  social,
+  instagramPosts,
+  offerPix,
+}: HomepageProps) => {
   return (
     <>
       <Header social={social} />
@@ -21,6 +27,7 @@ const Homepage = ({ pastors, social, instagramPosts, offerPix }: HomepageProps) 
         <SectionHero />
         <SectionConfessionOfFaith />
         <SectionAboutUs />
+        <SectionActivities />
         <SectionOurPastors pastors={pastors} />
         <SectionContribution offerPix={offerPix} />
         <SectionsPhotosGallery instagramPosts={instagramPosts} />

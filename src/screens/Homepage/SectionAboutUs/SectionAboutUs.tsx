@@ -1,3 +1,4 @@
+import ButtonSecondary from "src/components/ButtonSecondary";
 import {
   SectionAboutUsContainer,
   SectionTextAboutUs,
@@ -21,6 +22,7 @@ const SectionAboutUs = () => {
           mais tempo. Baixar confissão de fé.
         </p>
       </SectionTextAboutUs>
+      {/* <ButtonSecondary>Conheça a Cidade Cinco</ButtonSecondary> */}
     </SectionAboutUsContainer>
   );
 };
