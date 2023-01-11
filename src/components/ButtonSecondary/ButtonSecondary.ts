@@ -13,6 +13,7 @@ const ButtonSecondary = styled.button`
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  width: fit-content;
 
 
   svg {

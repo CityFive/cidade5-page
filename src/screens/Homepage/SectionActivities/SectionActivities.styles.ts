@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const SectionActivitiesContainer = styled.div`
   width: 100%;
-  height: 650px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  /* height: 650px; */
+  padding-top: 128px;
+  padding-bottom: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,13 +15,14 @@ export const SectionActivitiesContainer = styled.div`
 `;
 export const SectionTextActivities = styled.div`
   width: 950px;
-  height: 289px;
+  height: 220px;
   color: ${NeutralColors.lightest};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-bottom: 64px;
   
   h3 {
     padding-top: 0px;
@@ -46,3 +47,8 @@ export const SectionTextActivities = styled.div`
     font-weight:lighter ;
   }
 `;
+
+export const Activitiescards = styled.div`
+width: 950px;
+`
+
