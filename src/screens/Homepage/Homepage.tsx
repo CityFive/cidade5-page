@@ -31,7 +31,7 @@ const Homepage = ({
         <SectionsPhotosGallery instagramPosts={instagramPosts} />
         <SectionOurPastors  />
         <SectionMedias social={social} />
-        <SectionContribution offerPix={offerPix} />
+        <SectionContribution />
       </main>
       <Footer social={social} offerPix={offerPix} />
     </>

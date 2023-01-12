@@ -6,11 +6,7 @@ import {
 } from "./SectionContribution.styles";
 import ButtonPrimary from "src/components/ButtonPrimary";
 
-interface Props {
-  social: SocialInfo;
-}
-
-const SectionContribution = ({ offerPix }) => (
+const SectionContribution = () => (
   <SectionContributionContainer>
     <Container>
       <Image
