@@ -2,49 +2,54 @@ import styled from "styled-components";
 import { MediaQueries } from "../../../foundation/media";
 import { BrandColors, NeutralColors } from "../../../foundation/tokens";
 
-export const PageContainer = styled.div`
-  margin-top: 114px;
+export const SectionOurPastorsContainer = styled.div`
   width: 100%;
-  overflow: hidden;
-  overflow-x: scroll;
-`;
-
-export const CarouselContainer = styled.div`
+  /* height: 650px; */
+  padding-top: 128px;
+  padding-bottom: 160px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 61px;
-  width: 100%;
-  overflow-x: scroll;
-
-  @media ${MediaQueries.Medium} {
-    display: none;
-  }
-`;
-
-export const CarouselItem = styled.div`
-  width: 320px;
-  margin-right: 20px;
-`;
-
-export const CarouselDotList = styled.div`
-  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-top: 32px;
-
-  @media ${MediaQueries.Medium} {
-    display: none;
-  }
+  background-color: ${NeutralColors.lightest}; ;
+  gap: 80px;
 `;
 
-export const CarouselDot = styled.div<{ isActive: boolean }>`
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 8px;
-  background-color: ${NeutralColors.medium};
-  cursor: pointer;
 
-  ${props => props.isActive && `
-    background-color: ${BrandColors.colorBrand02};
-  `};
+export const CardsContainer = styled.div`
+ display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 64px;
+
+width: 1249.79px;
+height: 498.67px;
+`;
+
+export const SectionTextOurPastors = styled.div`
+  width: 950px;
+  height: 155px;
+  color: ${NeutralColors.darkest};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  
+  h3 {
+    padding-top: 0px;
+    font-size: 1.125rem;
+    margin: 0;
+    padding: none;
+    font-family: "Proxima Nova Semibold";
+    color: ${BrandColors.colorBrand02};
+  }
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Proxima Nova Semibold";
+  }
 `;

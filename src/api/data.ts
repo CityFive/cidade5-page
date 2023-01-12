@@ -46,37 +46,26 @@ export const data = {
       {
         imageUrl: "/images/fabio.png",
         fullName: "Fabio Leal",
-        title: "Seminarista e pastor",
         description:
-          "é casado com a Anielle, pai do Martin e mora em São Paulo há seis anos. Está no último ano do Seminário Martin Bucer e atua na plantação de igreja há quase 10 anos. Em São Paulo, é pastor titular da Igreja Cidade Cinco.",
-        social: {
-          instagramUrl: "https://www.instagram.com/pastorfabinho/",
-          twitterUrl: "https://twitter.com/pastorfabioleal",
-          youtubeUrl:
-            "https://www.youtube.com/channel/UCA5eDWACcuOepN3zPH8mx9A",
-        },
+          "Casado com a Anielle e pai do Martin. Estuda teologia no Seminário Martin Bucer e já atuou na plantação de duas igrejas locais. É pastor titular da Igreja Cidade Cinco.",
       },
       {
         imageUrl: "/images/matheus.png",
         fullName: "Matheus Odilon",
-        title: "Seminarista",
         description:
-          "é casado com a Barbara e pai da Amélia. Estuda teologia reformada no Seminário Martin Bucer e trabalha como desenvolvedor de software. Em São Paulo, é um dos homens responsáveis pela pregação bíblica e cooperador pastoral da Igreja Cidade Cinco.",
-        social: {
-          instagramUrl: "https://www.instagram.com/mtsodilon/",
-          twitterUrl: "https://twitter.com/mtsodilon",
-        },
+          "Casado com a Bárbara e pai da Amélia. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
       },
       {
         imageUrl: "/images/sergio.png",
         fullName: "Sérgio Sousa",
-        title: "Seminarista",
         description:
-          "é casado com a Camilla e pai da Antonella. Estuda teologia reformada no Seminário Martin Bucer e trabalha como empreendedor. Em São Paulo, é um dos homens responsáveis pela administração e um cooperador pastoral da Igreja Cidade Cinco.",
-        social: {
-          instagramUrl: "https://www.instagram.com/sergiogns/",
-          twitterUrl: "https://twitter.com/sergiogns",
-        },
+          "Casado com a Camila e pai da Antonella e da Gabriella. Estuda teologia no Seminário Martin Bucer e trabalha como Gerente de Produto. É pastor auxiliar na Cidade Cinco.",
+      },
+      {
+        imageUrl: "/images/sergio.png",
+        fullName: "Luiz Felipe",
+        description:
+          "Casado com a Kemilly. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
       },
     ] as Pastor[],
     offerPix: "42.771.926/0001-20",

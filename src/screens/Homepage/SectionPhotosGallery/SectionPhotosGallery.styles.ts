@@ -1,6 +1,5 @@
 import { BrandColors, NeutralColors } from "src/foundation/tokens";
 import styled from "styled-components";
-import { MediaQueries } from "../../../foundation/media";
 
 export const GalleryList = styled.div`
   width: 950px;
