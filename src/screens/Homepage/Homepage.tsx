@@ -28,9 +28,9 @@ const Homepage = ({
         <SectionConfessionOfFaith />
         <SectionAboutUs />
         <SectionActivities />
+        <SectionsPhotosGallery instagramPosts={instagramPosts} />
         <SectionOurPastors pastors={pastors} />
         <SectionContribution offerPix={offerPix} />
-        <SectionsPhotosGallery instagramPosts={instagramPosts} />
         <SectionSpotifyPlaylist social={social} />
       </main>
       <Footer social={social} offerPix={offerPix} />
