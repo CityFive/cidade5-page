@@ -15,11 +15,12 @@ export const Container = styled.div`
   height: 280px;
   display: flex;
   justify-content: space-between;
-
+  
   section {
     display: flex;
     flex-direction: column;
     gap: 64px;
+    justify-content: space-between;
   }
   div {
     display: flex;
