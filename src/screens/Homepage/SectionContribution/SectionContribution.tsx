@@ -1,80 +1,34 @@
-import React from "react";
-import { Flex, Box } from "reflexbox";
-import Grid from "../../../components/Grid";
-import Typography from "../../../components/Typography";
-import { InfoSection } from "../Homepage.styles";
+import { SocialInfo } from "../../../api/data";
 import Image from "next/image";
-import HiddenOnSmall from "../../../components/Grid/HiddenOnSmall";
-import CopyToClipboard from "../../../components/CopyToClipboard";
-import HiddenOnMedium from "../../../components/Grid/HiddenOnMedium";
+import {
+  Container,
+  SectionContributionContainer,
+} from "./SectionContribution.styles";
+import ButtonPrimary from "src/components/ButtonPrimary";
 
-const SectionContribution = ({ offerPix }) => {
-  return (
-    <InfoSection
-      style={{ marginTop: "114px", paddingTop: "39px", paddingBottom: "39px" }}
-    >
-      <Grid.Container>
-        <Grid.Row>
-          <Grid.Column width={[4, 5]}>
-            <Flex flexDirection="column" justifyContent="center" height="100%">
-              <HiddenOnSmall>
-                <Typography.HeadingMedium style={{ fontSize: "32px" }}>
-                  Dados para{" "}
-                  <Typography.Highlight>contribuir</Typography.Highlight> <br />
-                  financeiramente
-                </Typography.HeadingMedium>
-              </HiddenOnSmall>
-              <HiddenOnMedium>
-                <Typography.HeadingMedium>
-                  Dados para{" "}
-                  <Typography.Highlight>contribuir</Typography.Highlight> <br />
-                  financeiramente
-                </Typography.HeadingMedium>
-              </HiddenOnMedium>
-            </Flex>
-          </Grid.Column>
-          <Grid.Column width={[4, 5]} style={{ display: "flex" }}>
-            <HiddenOnMedium>
-              <Flex alignItems="center" mt="24px">
-                <Typography.Paragraph>
-                  <strong>PIX:</strong> {offerPix}
-                </Typography.Paragraph>
-                <CopyToClipboard text={offerPix} />
-              </Flex>
-            </HiddenOnMedium>
-            <HiddenOnSmall>
-              <Flex
-                flexDirection="column"
-                justifyContent="center"
-                height="100%"
-              >
-                <Typography.Paragraph>
-                  Aponte a câmera do smartphone para este QR-Code para fazer uma
-                  transferência via PIX.
-                </Typography.Paragraph>
-              </Flex>
-            </HiddenOnSmall>
-          </Grid.Column>
-          <Grid.Column width={[4, 2]}>
-            <HiddenOnSmall>
-              <Flex
-                flexDirection="column"
-                justifyContent="center"
-                height="100%"
-              >
-                <Image
-                  src="/images/qr-code.png"
-                  alt="Picture of the author"
-                  width={151}
-                  height={151}
-                />
-              </Flex>
-            </HiddenOnSmall>
-          </Grid.Column>
-        </Grid.Row>
-      </Grid.Container>
-    </InfoSection>
-  );
-};
+interface Props {
+  social: SocialInfo;
+}
+
+const SectionContribution = ({ offerPix }) => (
+  <SectionContributionContainer>
+    <Container>
+      <Image
+        src="/images/qrcode.png"
+        width={278}
+        height={278}
+      />
+      <section>
+        <div>
+          <h3>CONTRIBUA</h3>
+          <h2>
+            Copie o Pix ou QR-Code para <br /> ofertar na Cidade Cinco
+          </h2>
+        </div>
+        <ButtonPrimary>Copiar chave Pix</ButtonPrimary>
+      </section>
+    </Container>
+  </SectionContributionContainer>
+);
 
 export default SectionContribution;

@@ -52,7 +52,6 @@ const SectionSpotifyPlaylist: React.FC<Props> = ({ social }) => {
           </section>
         </Container>
       </SectionSpotify>
-      Sec
     </>
   );
 };

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { BrandColors, NeutralColors } from "../../foundation/tokens";
 
 const ButtonPrimary = styled.button`
+  width: fit-content;
   padding: 16px 24px;
   background-color: ${BrandColors.colorBrand05};
   color: ${NeutralColors.darkest};
