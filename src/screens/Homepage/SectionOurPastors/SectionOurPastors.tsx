@@ -7,19 +7,10 @@ import {
   SectionTextOurPastors,
 } from "./SectionOurPastors.styles";
 
-interface Props {
-  imageUrl: string;
-  fullName: string;
-  description: string;
-}
 
 const pastors = data.churchInfo.pastors;
 
-const SectionOurPastors: React.FC<Props> = ({
-  imageUrl,
-  fullName,
-  description,
-}: Props) => {
+const SectionOurPastors= () => {
   return (
     <SectionOurPastorsContainer id="atividades">
       <SectionTextOurPastors>

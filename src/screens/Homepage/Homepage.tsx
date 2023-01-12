@@ -5,12 +5,12 @@ import SectionConfessionOfFaith from "./SectionConfessionOfFaith";
 import SectionOurPastors from "./SectionOurPastors";
 import SectionContribution from "./SectionContribution";
 import SectionsPhotosGallery from "./SectionPhotosGallery";
-import SectionSpotifyPlaylist from "./SectionSpotifyPlaylist";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { InferGetStaticPropsType } from "next";
 import { getStaticProps } from "../../../pages";
 import SectionActivities from "./SectionActivities/SectionActivities";
+import SectionMedias from "./SectionMedias";
 
 type HomepageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -29,9 +29,9 @@ const Homepage = ({
         <SectionAboutUs />
         <SectionActivities />
         <SectionsPhotosGallery instagramPosts={instagramPosts} />
-        <SectionOurPastors pastors={pastors} />
+        <SectionOurPastors  />
+        <SectionMedias social={social} />
         <SectionContribution offerPix={offerPix} />
-        <SectionSpotifyPlaylist social={social} />
       </main>
       <Footer social={social} offerPix={offerPix} />
     </>
