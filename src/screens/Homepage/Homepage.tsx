@@ -33,7 +33,7 @@ const Homepage = ({
         <SectionMedias social={social} />
         <SectionContribution />
       </main>
-      <Footer social={social} offerPix={offerPix} />
+      <Footer />
     </>
   );
 };
