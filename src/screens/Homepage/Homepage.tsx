@@ -1,16 +1,17 @@
-import * as React from "react";
-import SectionAboutUs from "./SectionAboutUs";
-import SectionHero from "./SectionHero";
-import SectionConfessionOfFaith from "./SectionConfessionOfFaith";
-import SectionOurPastors from "./SectionOurPastors";
-import SectionContribution from "./SectionContribution";
-import SectionsPhotosGallery from "./SectionPhotosGallery";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
 import { InferGetStaticPropsType } from "next";
 import { getStaticProps } from "../../../pages";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import SectionAboutUs from "./SectionAboutUs";
 import SectionActivities from "./SectionActivities/SectionActivities";
+import SectionConfessionOfFaith from "./SectionConfessionOfFaith";
+import SectionContribution from "./SectionContribution";
+import SectionHero from "./SectionHero";
 import SectionMedias from "./SectionMedias";
+import SectionOurPastors from "./SectionOurPastors";
+import SectionsPhotosGallery from "./SectionPhotosGallery";
+import SectionWhatsApp from "./SectionWhatsApp/index";
+
 
 type HomepageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -29,7 +30,8 @@ const Homepage = ({
         <SectionAboutUs />
         <SectionActivities />
         <SectionsPhotosGallery instagramPosts={instagramPosts} />
-        <SectionOurPastors  />
+        <SectionWhatsApp />
+        <SectionOurPastors />
         <SectionMedias social={social} />
         <SectionContribution />
       </main>

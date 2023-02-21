@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NeutralColors } from "../../../src/foundation/tokens";
+import { NeutralColors } from "../../foundation/tokens";
 
 export const InfoSection = styled.div`
   background-color: ${NeutralColors.light};
