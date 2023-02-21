@@ -4,28 +4,36 @@ import { BrandColors, NeutralColors } from "../../../foundation/tokens";
 
 export const SectionOurPastorsContainer = styled.div`
   width: 100%;
-  /* height: 650px; */
   padding-top: 128px;
   padding-bottom: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${NeutralColors.lightest}; ;
-  gap: 80px;
+  background-color: ${BrandColors.colorBrand03};
+  gap: 60px;
+
+  h4 {
+    padding-top: 0px;
+    font-size: 1.625rem;
+    margin: 0;
+    
+    padding: none;
+    font-family: "Proxima Nova Semibold";
+    font-weight: 100;
+    color: ${NeutralColors.darkest};
+  }
 `;
 
-
 export const CardsContainer = styled.div`
- display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-start;
-padding: 0px;
-gap: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 
-width: 1249.79px;
-height: 498.67px;
+  width: 1250px;
 `;
 
 export const SectionTextOurPastors = styled.div`
@@ -37,7 +45,14 @@ export const SectionTextOurPastors = styled.div`
   justify-content: center;
   align-items: center;
   gap: 24px;
-  
+
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+    font-family: "Proxima Nova Semibold";
+  }
+
   h3 {
     padding-top: 0px;
     font-size: 1.125rem;
@@ -45,11 +60,5 @@ export const SectionTextOurPastors = styled.div`
     padding: none;
     font-family: "Proxima Nova Semibold";
     color: ${BrandColors.colorBrand02};
-  }
-  h2 {
-    margin: 0;
-    font-size: 3rem;
-    text-align: center;
-    font-family: "Proxima Nova Semibold";
   }
 `;

@@ -46,26 +46,53 @@ export const data = {
       {
         imageUrl: "/images/fabio.png",
         fullName: "Fabio Leal",
+        title: "Pastor Titular",
         description:
           "Casado com a Anielle e pai do Martin. Estuda teologia no Seminário Martin Bucer e já atuou na plantação de duas igrejas locais. É pastor titular da Igreja Cidade Cinco.",
       },
       {
         imageUrl: "/images/matheus.png",
         fullName: "Matheus Odilon",
+        title: "Presbítero",
         description:
           "Casado com a Bárbara e pai da Amélia. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
       },
       {
         imageUrl: "/images/sergio.png",
         fullName: "Sérgio Sousa",
+        title: "Presbítero",
         description:
           "Casado com a Camila e pai da Antonella e da Gabriella. Estuda teologia no Seminário Martin Bucer e trabalha como Gerente de Produto. É pastor auxiliar na Cidade Cinco.",
       },
       {
         imageUrl: "/images/sergio.png",
         fullName: "Luiz Felipe",
+        title: "Presbítero",
         description:
           "Casado com a Kemilly. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
+      },
+    ] as Pastor[],
+    deacons: [
+      {
+        imageUrl: "/images/fabio.png",
+        fullName: "Bruno Rosa",
+        title: "Seminarista",
+        description:
+          "Casado com a Victoria e pai da Ana Alice. Estuda no Seminário Martin Bucer e trabalha como designer de produto digital.",
+      },
+      {
+        imageUrl: "/images/matheus.png",
+        fullName: "Gabriel Felipe",
+        title: "Seminarista",
+        description:
+          "Casado com a Tabata. Estuda no Seminário Martin Bucer e administra sua própria barbearia na cidade de Guarulhos.",
+      },
+      {
+        imageUrl: "/images/sergio.png",
+        fullName: "Adriano Brito",
+        title: "Seminarista",
+        description:
+          "Estuda no Seminário Foco e trabalha como mêcanico automotivo.",
       },
     ] as Pastor[],
     offerPix: "42.771.926/0001-20",
